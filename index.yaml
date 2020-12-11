@@ -3,7 +3,7 @@ entries:
   aws-calico:
   - apiVersion: v1
     appVersion: 3.13.4
-    created: "2020-12-10T17:26:34.218219-08:00"
+    created: "2020-12-10T17:50:34.405354-08:00"
     description: A Helm chart for installing Calico on AWS
     digest: 50be5204421f4a925bb692f7f2e2662a1d318f422e30b76fa1563207e031a572
     icon: https://www.projectcalico.org/wp-content/uploads/2019/09/Calico_Logo_Large_Calico.png
@@ -14,7 +14,7 @@ entries:
   superset:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-12-10T17:26:34.223704-08:00"
+    created: "2020-12-10T17:50:34.413076-08:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -26,7 +26,7 @@ entries:
       version: 10.3.4
     description: Apache Superset is a modern, enterprise-ready business intelligence
       web application
-    digest: ac045160c09848c3025b7707e46b988d5c295e46b724b4f595ddf436a8a076c4
+    digest: 88c7e41efad58ac3bdc06b687d81a7bd6d1706b6de98dd92deaf3d077d0b9800
     maintainers:
     - email: cychiang0823@gmail.com
       name: Chuan-Yen Chiang
@@ -35,4 +35,4 @@ entries:
     urls:
     - superset-0.1.0.tgz
     version: 0.1.0
-generated: "2020-12-10T17:26:34.214107-08:00"
+generated: "2020-12-10T17:50:34.400689-08:00"
