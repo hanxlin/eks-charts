@@ -164,7 +164,7 @@ postgresql:
   ##
   ## Use the PostgreSQL chart dependency.
   ## Set to false if bringing your own PostgreSQL.
-  enabled: false
+  enabled: true
 
   ##
   ## The name of an existing secret that contains the postgres password.
@@ -211,7 +211,7 @@ redis:
   ##
   ## Use the redis chart dependency.
   ## Set to false if bringing your own redis.
-  enabled: false
+  enabled: true
 
   usePassword: false
 
