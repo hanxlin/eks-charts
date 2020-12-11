@@ -43,6 +43,10 @@ extraEnv: {}
 
 configMountPath: "/app/pythonpath"
 
+# User defined superset-config.py and extra config files with user defined names
+configFile: {}
+extraConfigFiles: {}
+
 image:
   repository: apache/incubator-superset
   tag: latest
