@@ -37,6 +37,11 @@ configFromSecret: '{{ template "superset.fullname" . }}-config'
 ##
 envFromSecret: '{{ template "superset.fullname" . }}-env'
 
+## The name another secret which we will use to add additional env vars.
+## This is useful for clusters that are partly managed by another infra-as-code
+## system (eg. Terraform) which also creates secrets.
+extraEnvFromSecret: 'ie-ie-superset-from-aws-param'
+
 ## Extra environment variables that will be passed into pods
 ##
 extraEnv: {}
