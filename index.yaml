@@ -3,7 +3,7 @@ entries:
   aws-calico:
   - apiVersion: v1
     appVersion: 3.13.4
-    created: "2020-12-11T18:04:42.855695-08:00"
+    created: "2021-01-24T16:00:11.664206-08:00"
     description: A Helm chart for installing Calico on AWS
     digest: 50be5204421f4a925bb692f7f2e2662a1d318f422e30b76fa1563207e031a572
     icon: https://www.projectcalico.org/wp-content/uploads/2019/09/Calico_Logo_Large_Calico.png
@@ -14,7 +14,7 @@ entries:
   superset:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-12-11T18:04:42.861259-08:00"
+    created: "2021-01-24T16:00:11.668532-08:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -26,13 +26,13 @@ entries:
       version: 10.3.4
     description: Apache Superset is a modern, enterprise-ready business intelligence
       web application
-    digest: d46b941a17d9b01f701adc58b26e216f2214f2db37fcec67f21773ee81c9f6f1
+    digest: 7f5e6739de8579692ed1994068536bb5e90b80f7b3f937e9fed699729f637f84
     maintainers:
-    - email: cychiang0823@gmail.com
-      name: Chuan-Yen Chiang
-      url: https://github.com/cychiang
+    - email: han.lin@chanzuckerberg.com
+      name: Han Lin
+      url: https://github.com/hanxlin/eks-charts
     name: superset
     urls:
-    - superset-0.1.0.tgz
-    version: 0.1.0
-generated: "2020-12-11T18:04:42.854276-08:00"
+    - superset-0.2.0.tgz
+    version: 0.2.0
+generated: "2021-01-24T16:00:11.662533-08:00"
