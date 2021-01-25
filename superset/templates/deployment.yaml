@@ -60,11 +60,6 @@ spec:
               value: {{ $value | quote }}
             {{- end }}
           {{- end }}
-          {{ if .Values.envMap }}
-            {{- with .Values.envMap }}
-{{ toYaml . | indent 12 }}
-            {{- end }}
-          {{- end }}
           envFrom:
             - secretRef:
                 name: {{ tpl .Values.envFromSecret . | quote }}

@@ -46,15 +46,6 @@ extraEnvFromSecret: {}
 ##
 extraEnv: {}
 
-## the full yaml map to pass to the env field as is
-# envMap: {}
-# envMap:
-#   - name: MY_ENV_FROM_SECRET
-#     valueFrom:
-#       secretKeyRef:
-#         key: secret-item
-#         name: secret-source
-
 configMountPath: "/app/pythonpath"
 
 # User defined superset-config.py and extra config files with user defined names
