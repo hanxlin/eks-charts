@@ -165,7 +165,7 @@ metadata:
   ##
   podAnnotations: {}
   ##
-  ## custom config file
+  ## custom config file as ConfigMap
   configFile: {}
 
 ##

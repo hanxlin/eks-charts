@@ -1,9 +1,9 @@
 {{- if .Values.metadata.configFile }}
 apiVersion: v1
-kind: Secret
+kind: ConfigMap
 metadata:
     name: amundsen-metadata-config
     namespace: {{ .Release.Namespace }}
 data:
-  config.py: {{ .Values.metadata.configFile | b64enc | quote }}
+  config.py: {{ .Values.metadata.configFile | quote }}
 {{- end }}
