@@ -164,6 +164,9 @@ metadata:
   ## metadata.podAnnotations -- Metadata pod specific annotations.
   ##
   podAnnotations: {}
+  ##
+  ## custom config file
+  configFile: {}
 
 ##
 ## Configuration related to the frontEnd service.
