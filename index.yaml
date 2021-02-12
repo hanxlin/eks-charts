@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   amundsen:
   - apiVersion: v1
-    created: "2021-02-04T23:06:26.012011-08:00"
+    created: "2021-02-11T17:46:29.574041-08:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -10,7 +10,7 @@ entries:
       version: 1.32.0
     description: Amundsen is a metadata driven application for improving the productivity
       of data analysts, data scientists and engineers when interacting with data.
-    digest: 59b98a3abd57665ccb01e2a9cb2cc1b0f351132786257c75fe78fed0940ed87b
+    digest: be8cd080d7fd7410ddd2a1a85a8002ef65f5f077b860ca76138111080a1174a7
     home: https://github.com/amundsen-io/amundsen
     icon: https://github.com/amundsen-io/amundsen/blob/master/docs/img/logos/amundsen_logo_on_light.svg
     keywords:
@@ -28,7 +28,7 @@ entries:
   aws-calico:
   - apiVersion: v1
     appVersion: 3.13.4
-    created: "2021-02-04T23:06:26.01325-08:00"
+    created: "2021-02-11T17:46:29.575336-08:00"
     description: A Helm chart for installing Calico on AWS
     digest: 50be5204421f4a925bb692f7f2e2662a1d318f422e30b76fa1563207e031a572
     icon: https://www.projectcalico.org/wp-content/uploads/2019/09/Calico_Logo_Large_Calico.png
@@ -39,7 +39,7 @@ entries:
   superset:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-02-04T23:06:26.018995-08:00"
+    created: "2021-02-11T17:46:29.582577-08:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -60,4 +60,4 @@ entries:
     urls:
     - superset-0.2.0.tgz
     version: 0.2.0
-generated: "2021-02-04T23:06:26.008436-08:00"
+generated: "2021-02-11T17:46:29.571549-08:00"
