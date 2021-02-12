@@ -261,6 +261,10 @@ frontEnd:
   ## frontEnd.podAnnotations -- Frontend pod specific annotations.
   ##
   podAnnotations: {}
+  ##
+  ## frontend config override
+  ##
+  configFile: {}
 
 ##
 ## Configuration related to neo4j.

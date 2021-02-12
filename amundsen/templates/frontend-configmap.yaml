@@ -1,0 +1,9 @@
+{{- if .Values.frontend.configFile }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: amundsen-frontend-config
+    namespace: {{ .Release.Namespace }}
+data:
+  config.py: {{ .Values.frontend.configFile | quote }}
+{{- end }}
