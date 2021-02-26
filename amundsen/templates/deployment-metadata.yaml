@@ -38,6 +38,11 @@ spec:
 {{ toYaml . | indent 8 }}
       {{- end }}
       volumes:
+      {{- if .Values.metadata.customConfig }}
+        - name: metadata-config
+          configMap:
+            name: {{ .Values.metadata.customConfig.configMapName }}
+      {{- end }}
       {{- if .Values.frontEnd.oidcEnabled }}
         - name: oidc-config
           secret:
@@ -61,6 +66,10 @@ spec:
               name: oidc-config
               key: OIDC_CLIENT_SECRET
         {{- end }}
+        {{- range .Values.metadata.extraEnvs }}
+        - name: {{ .name }}
+          value: {{ .value }}
+        {{- end }}
         livenessProbe:
           httpGet:
             path: "/healthcheck"
@@ -75,6 +84,11 @@ spec:
           - name: oidc-config
             mountPath: /etc/client_secrets.json
             subPath: client_secrets.json
+        {{- end }}
+        {{- if .Values.metadata.customConfig }}
+          - name: metadata-config
+            mountPath: {{ .Values.metadata.customConfig.mountPath }}
+            subPath: config.py
         {{- end }}
         {{- with .Values.metadata.resources }}
         resources:
