@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   amundsen:
   - apiVersion: v1
-    created: "2021-04-21T12:16:53.754401-07:00"
+    created: "2021-04-21T12:27:04.618132-07:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -26,7 +26,7 @@ entries:
     - amundsen-2.1.0.tgz
     version: 2.1.0
   - apiVersion: v1
-    created: "2021-04-21T12:16:53.752296-07:00"
+    created: "2021-04-21T12:27:04.615041-07:00"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -52,7 +52,7 @@ entries:
   aws-calico:
   - apiVersion: v1
     appVersion: 3.13.4
-    created: "2021-04-21T12:16:53.755025-07:00"
+    created: "2021-04-21T12:27:04.619818-07:00"
     description: A Helm chart for installing Calico on AWS
     digest: 50be5204421f4a925bb692f7f2e2662a1d318f422e30b76fa1563207e031a572
     icon: https://www.projectcalico.org/wp-content/uploads/2019/09/Calico_Logo_Large_Calico.png
@@ -63,7 +63,30 @@ entries:
   superset:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-04-21T12:16:53.759911-07:00"
+    created: "2021-04-21T12:27:04.62977-07:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 8.1.4
+    - condition: redis.enabled
+      name: redis
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 10.3.4
+    description: Apache Superset is a modern, enterprise-ready business intelligence
+      web application
+    digest: ea93e1dfc054c59bff88f968f3a87e3f8d1c9816f5b21545c5e1f3cd0ffada52
+    maintainers:
+    - email: han.lin@chanzuckerberg.com
+      name: Han Lin
+      url: https://github.com/hanxlin/eks-charts
+    name: superset
+    urls:
+    - superset-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2021-04-21T12:27:04.625791-07:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -84,4 +107,4 @@ entries:
     urls:
     - superset-0.2.0.tgz
     version: 0.2.0
-generated: "2021-04-21T12:16:53.749885-07:00"
+generated: "2021-04-21T12:27:04.611959-07:00"
