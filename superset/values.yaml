@@ -89,6 +89,7 @@ resources: {}
 ##
 ## Superset node configuration
 supersetNode:
+  secretKey: ""
   command:
     - "/bin/sh"
     - "-c"
